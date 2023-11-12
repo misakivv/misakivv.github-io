@@ -56,21 +56,21 @@
   --color-site-body: #f4f4f4;
   --color-site-bg: #f4f4f4;
   --color-site-inner: #fff;
-  --color-site-footer: #666;
+  --color-site-footer: #fff;
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
-  --color-inlinecode: #c74f00;
-  --color-codeblock: #fff7ea;
-  --color-h1: #3a3a3a;
-  --color-h2: #3a3a3a;
-  --color-h3: #333;
+  --color-inlinecode: #d56d28;
+  --color-codeblock: #f6f6f6;
+  --color-h1: #444;
+  --color-h2: #444;
+  --color-h3: #444;
   --color-h4: #444;
-  --color-h5: #555;
-  --color-h6: #666;
+  --color-h5: #444;
+  --color-h6: #444;
   --color-p: #444;
   --color-list: #666;
-  --color-list-hl: #30ad91;
+  --color-list-hl: #36ac91;
   --color-meta: #888;
   --color-read-bkg: #e0d8c8;
   --color-read-post: #f8f1e2;
@@ -92,7 +92,7 @@
   background: transparent;
 }
 *::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #44d7b6;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -115,7 +115,7 @@ html >::-webkit-scrollbar-track-piece {
   background: transparent;
 }
 html >::-webkit-scrollbar-thumb {
-  background: #3dd9b6;
+  background: #44d7b6;
   cursor: pointer;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -144,7 +144,7 @@ body.modal-active {
   }
 }
 a {
-  color: #2092ec;
+  color: #2196f3;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.28s ease;
@@ -266,103 +266,6 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
-}
-.cover-wrapper .cover-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-.cover-wrapper .cover-bg.lazyload:not(.loaded) {
-  opacity: 0;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-}
-.cover-wrapper .cover-bg.lazyload.loaded {
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-name: fadeIn;
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -713,120 +616,69 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper.dock .menu,
-.cover-wrapper.featured .menu,
-.cover-wrapper.focus .menu {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.cover-wrapper.dock .menu .list-h a,
-.cover-wrapper.featured .menu .list-h a,
-.cover-wrapper.focus .menu .list-h a {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  line-height: 24px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-bottom: none;
-  text-align: center;
-  align-content: flex-end;
-  color: rgba(68,68,68,0.7);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h a,
-  .cover-wrapper.featured .menu .list-h a,
-  .cover-wrapper.focus .menu .list-h a {
-    padding: 12px 8px;
-  }
-}
-.cover-wrapper.dock .menu .list-h a i,
-.cover-wrapper.featured .menu .list-h a i,
-.cover-wrapper.focus .menu .list-h a i {
-  margin: 8px;
-}
-.cover-wrapper.dock .menu .list-h a p,
-.cover-wrapper.featured .menu .list-h a p,
-.cover-wrapper.focus .menu .list-h a p {
-  font-size: 0.875rem;
-}
-.cover-wrapper.dock .menu .list-h a.active,
-.cover-wrapper.featured .menu .list-h a.active,
-.cover-wrapper.focus .menu .list-h a.active {
-  background: var(--color-card);
-  backdrop-filter: none;
-}
-.cover-wrapper.dock .menu .list-h a.active i,
-.cover-wrapper.featured .menu .list-h a.active i,
-.cover-wrapper.focus .menu .list-h a.active i,
-.cover-wrapper.dock .menu .list-h a.active i+p,
-.cover-wrapper.featured .menu .list-h a.active i+p,
-.cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
-}
-.cover-wrapper.dock .menu .list-h a.active img+p,
-.cover-wrapper.featured .menu .list-h a.active img+p,
-.cover-wrapper.focus .menu .list-h a.active img+p {
-  color: var(--color-text);
-}
-.cover-wrapper.dock .menu .list-h a:hover,
-.cover-wrapper.featured .menu .list-h a:hover,
-.cover-wrapper.focus .menu .list-h a:hover {
-  background: var(--color-card);
-}
-.cover-wrapper.dock .top {
-  margin-bottom: 48px;
-}
-.cover-wrapper.dock .menu {
-  background: rgba(255,255,255,0.5);
+.cover-wrapper #parallax-window {
   position: absolute;
-  bottom: 0;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
 }
-.cover-wrapper.dock .menu .list-h {
-  flex-wrap: nowrap;
-  -webkit-flex-wrap: nowrap;
-  -khtml-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
-  -o-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  margin: 4px;
+.parallax-mirror {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
 }
-.cover-wrapper.dock .menu .list-h a+a {
-  margin-left: 4px;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h {
-    overflow-x: scroll;
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
   }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
-    height: 0;
-    width: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
-    background: transparent;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
-    background: #3dd9b6;
-    cursor: pointer;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-  }
-  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
-    background: #ff5722;
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
   }
 }
-@supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.dock .menu {
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: saturate(200%) blur(20px);
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
   }
 }
 @font-face {
@@ -1042,7 +894,7 @@ button {
   -moz-transition: all 0.28s ease;
   -o-transition: all 0.28s ease;
   -ms-transition: all 0.28s ease;
-  color: #3dd9b6;
+  color: #44d7b6;
 }
 .l_header .switcher >li >a:hover {
   border: none;
@@ -1222,7 +1074,7 @@ ul.m-pc >li>a {
 }
 ul.m-pc >li>a:active,
 ul.m-pc >li>a.active {
-  border-bottom: 2px solid #3dd9b6;
+  border-bottom: 2px solid #44d7b6;
 }
 ul.m-pc li:hover >ul.list-v,
 ul.list-v li:hover >ul.list-v {
@@ -1361,7 +1213,7 @@ ul.list-v >li>a:hover {
 }
 .l_header ul.nav-list-h>li >a:active,
 .l_header ul.nav-list-h>li >a.active {
-  color: #3dd9b6;
+  color: #44d7b6;
 }
 .l_header ul.nav-list-h>li:hover>a {
   color: var(--color-list-hl);
@@ -2109,7 +1961,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1699754840635),
+    lastupdate: new Date(1699758991378),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2117,7 +1969,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.26/fancybox/fancybox.umd.min.js'
     },
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2125,13 +1977,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           friendlyShow: true
         },
         runtime: {
-          data: "2020/01/01",
-          unit: "天"
+          data: "2022/12/04",
+          unit: "��"
         }
       }
     },
     plugins: {
       message: {"enable":true,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
+      
+      aplayer: {
+        id: 993524571,
+        enable:true
+      },
       
       
     },
@@ -2199,13 +2056,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/" title="����"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-rss fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2216,13 +2073,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
+                href="/categories/" title="����"
                   
                   
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                  <i class='fa-solid fa-folder-open fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2233,13 +2090,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tags/" title="标签"
+                href="/tags/" title="��ǩ"
                   
                   
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                  <i class='fa-solid fa-tags fa-fw'></i>��ǩ
                 </a>
                 
               </li>
@@ -2250,13 +2107,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="归档"
+                href="/archives/" title="�鵵"
                   
                   
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-solid fa-archive fa-fw'></i>归档
+                  <i class='fa-solid fa-archive fa-fw'></i>�鵵
                 </a>
                 
               </li>
@@ -2267,13 +2124,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/friends/" title="友链"
+                href="/friends/" title="����"
                   
                   
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-solid fa-link fa-fw'></i>友链
+                  <i class='fa-solid fa-link fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2284,13 +2141,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
+                href="/about/" title="����"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
+                  <i class='fa-solid fa-info-circle fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2320,13 +2177,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/" title="博客"
+                href="/" title="����"
                   
                   
                   
                     active-action="action-home"
                   >
-                  <i class='fa-solid fa-rss fa-fw'></i>博客
+                  <i class='fa-solid fa-rss fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2337,13 +2194,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/categories/" title="分类"
+                href="/categories/" title="����"
                   
                   
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                  <i class='fa-solid fa-folder-open fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2354,13 +2211,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/tags/" title="标签"
+                href="/tags/" title="��ǩ"
                   
                   
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                  <i class='fa-solid fa-tags fa-fw'></i>��ǩ
                 </a>
                 
               </li>
@@ -2371,13 +2228,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/archives/" title="归档"
+                href="/archives/" title="�鵵"
                   
                   
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-solid fa-archive fa-fw'></i>归档
+                  <i class='fa-solid fa-archive fa-fw'></i>�鵵
                 </a>
                 
               </li>
@@ -2388,13 +2245,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/friends/" title="友链"
+                href="/friends/" title="����"
                   
                   
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-solid fa-link fa-fw'></i>友链
+                  <i class='fa-solid fa-link fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2405,13 +2262,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/about/" title="关于"
+                href="/about/" title="����"
                   
                   
                   
                     active-action="action-about"
                   >
-                  <i class='fa-solid fa-info-circle fa-fw'></i>关于
+                  <i class='fa-solid fa-info-circle fa-fw'></i>����
                 </a>
                 
               </li>
@@ -2434,63 +2291,43 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-      <div class="cover-wrapper  dock" id='full'>
+      <div class="cover-wrapper  search" id='full'>
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg"></div>
+  <div id="parallax-window"></div>
 
 <div class='cover-body'>
   <div class='top'>
     
     
-      <p class="title">Volantis</p>
+      <p class="title">MengFanjun�Ĳ���</p>
     
     
   </div>
   <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="��һ��" />
+          <i class="icon fa-solid fa-search fa-fw"></i>
+        </form>
+      </div>
+    
     <div class='menu navigation'>
       <div class='list-h'>
         
           
-            <a href="/v4/getting-started/"
+            <a href="/"
               
               
-              active-action="action-v4getting-started">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
+              active-action="action-home">
+              <p>��ҳ</p>
             </a>
           
-            <a href="/faqs/"
+            <a href="/tags/"
               
               
-              active-action="action-faqs">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
-            </a>
-          
-            <a href="/examples/"
-              
-              
-              active-action="action-examples">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f396.svg'><p>示例</p>
-            </a>
-          
-            <a href="/contributors/"
-              
-              
-              active-action="action-contributors">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f389.svg'><p>社区</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f4f0.svg'><p>博客</p>
-            </a>
-          
-            <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/"
-              
-              
-              active-action="action-https:githubcomvolantis-xhexo-theme-volantis">
-              <img src='https://unpkg.com/volantis-static@0.0.1660614606622/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+              active-action="action-tags">
+              <p>��ǩ</p>
             </a>
           
         
@@ -2513,6 +2350,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <section class="post-list">
     
       
+        
+          
+        
+          
+        
+          
+        
+          
         
         
           
@@ -2563,6 +2408,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class='meta-v3' line_style='solid'>
       <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://beta.glilmu.com/i/2022/12/05/1xv9ka.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://beta.glilmu.com/i/2022/12/05/1xv9ka.png">
+            <meta itemprop="name" content="MengFanjun">
+            <meta itemprop="url" content="/">
+          </span>
         
         <time itemprop="dateCreated datePublished" datetime="2023-11-11T23:26:13+08:00">2023-11-11</time>
         
@@ -2627,6 +2480,14 @@ MP157开发板
     <div class='meta-v3' line_style='solid'>
       <div>
         
+          
+          <a class='avatar' href='/'><img src='https://beta.glilmu.com/i/2022/12/05/1xv9ka.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://beta.glilmu.com/i/2022/12/05/1xv9ka.png">
+            <meta itemprop="name" content="MengFanjun">
+            <meta itemprop="url" content="/">
+          </span>
+        
         <time itemprop="dateCreated datePublished" datetime="2023-11-11T23:22:16+08:00">2023-11-11</time>
         
       </div>
@@ -2683,6 +2544,14 @@ Qu...
     <div class='meta-v3' line_style='solid'>
       <div>
         
+          
+          <a class='avatar' href='/'><img src='https://beta.glilmu.com/i/2022/12/05/1xv9ka.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://beta.glilmu.com/i/2022/12/05/1xv9ka.png">
+            <meta itemprop="name" content="MengFanjun">
+            <meta itemprop="url" content="/">
+          </span>
+        
         <time itemprop="dateCreated datePublished" datetime="2023-11-11T22:52:18+08:00">2023-11-11</time>
         
       </div>
@@ -2721,12 +2590,14 @@ Qu...
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+          <img no-lazy src='https://beta.glilmu.com/i/2022/12/05/1xv9ka.png'/>
         </a>
       
     
     
       <div class='text'>
+        
+          <h2>MengFanjun</h2>
         
         
         
@@ -2739,16 +2610,7 @@ Qu...
       <div class="social-wrapper">
         
           
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
+            <a href="mailto:mengfanjun_020906@outlook.com"
               class="social fa-solid fa-envelope flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -2757,17 +2619,8 @@ Qu...
           
         
           
-            <a href="https://github.com/volantis-x/"
+            <a href="https://github.com/MengFanjun020906"
               class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
               
@@ -2799,6 +2652,73 @@ Qu...
   
 
   
+    
+    
+      
+<section class="widget desktop">
+  
+  <header>
+    
+      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>վ����Ϣ</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>������Ŀ��</div>
+          <div>3 ƪ</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>������ʱ�䣺</div>
+          <div id="webinfo-runtime-count"></div>
+        </div>
+      
+
+
+      
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>���ʱ�䣺</div>
+          <div id="last-update-show">2023-11-12 ��</div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+    
+  
+
+  
+    
+    
+      
+
+<section class="widget desktop mobile">
+  
+  <header>
+    
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>�������</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/11/11/%E5%9F%BA%E4%BA%8EMP157%E5%BC%80%E5%8F%91%E6%9D%BF%E7%9A%84%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E7%B3%BB%E7%BB%9F%20(2)/"><div class="item"><time>2023-11-11</time></div><span>基于MP157开发板的智能家居系统</span></a></li><li><a class="widget-last" href="/2023/11/11/hello-world/"><div class="item"><time>2023-11-11</time></div><span>Hello World</span></a></li></ul>
+  </div>
+</section>
+
+    
+  
 
 
 <div class="widget-sticky">
@@ -2822,6 +2742,24 @@ Qu...
         <div class="aplayer-container">
           
 
+  
+    
+      <meting-js
+        theme='#1BCDFC'
+        autoplay='true'
+        volume='0.7'
+        loop='all'
+        order='list'
+        fixed='true'
+        list-max-height='320px'
+        server='netease'
+        type='playlist'
+        id='993524571'
+        list-folded='true'>
+      </meting-js>
+    
+  
+
 
         </div>
       
@@ -2831,9 +2769,30 @@ Qu...
         <div class="social-wrapper" itemprop="about" itemscope itemtype="http://schema.org/Thing">
           
             
-          
+              <a href="/atom.xml"
+                class="social fas fa-rss flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
+            
+              <a href="mailto:mengfanjun_020906@outlook.com"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
+            
+          
+            
+              <a href="https://github.com/MengFanjun020906"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer" itemprop="url">
+                
+              </a>
             
           
         </div>
@@ -2852,7 +2811,7 @@ Qu...
     
       
         <div class='copyright'>
-        <p><a href="/">Copyright © since 2017 XXX</a></p>
+        <p><a href="/">Copyright ? 2017-2022 �Ϸ���</a></p>
 
         </div>
       
@@ -2973,6 +2932,81 @@ Qu...
 
 
 
+  <script>
+  volantis.css("https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css");
+
+  
+    (async () => {
+      // APlayer 需要在  MetingJS 之前加载
+      await volantis.js("https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js")
+      await volantis.js("https://unpkg.com/meting@2.0.1/dist/Meting.min.js")
+    
+    })();
+
+    function SetAPlayerPlugin(){
+      let Metings = document.querySelectorAll('meting-js');
+      if (Metings.length === 0) {return;};
+      if (Metings[0].aplayer && Metings[0].aplayer.on) {
+        // improve the accessibility https://web.dev/button-name/
+        document.querySelectorAll(".aplayer-icon-menu").forEach(e=>{
+          e.setAttribute("aria-label","Aplayer Menu")
+        })
+        // message see: /layout/_plugins/message/script.ejs
+        
+          try {
+            setTimeout(() => {
+              Metings.forEach((item, index) => {
+                const aplayerItem = item.aplayer; if(!aplayerItem) return;
+                const rightAplayerCheck = 'true' === 'true'
+                  && item.meta.id === '993524571';
+                if(rightAplayerCheck && typeof RightMenuAplayer !="undefined") RightMenuAplayer.checkAPlayer();
+                if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
+                  aplayerItem.on('play', function messagePlay() {
+                    let index = aplayerItem.list.index;
+                    let title = aplayerItem.list.audios[index].title;
+                    let artist = aplayerItem.list.audios[index].artist;
+                    setTimeout(() => {
+                      VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                        icon: 'fa-solid fa-play',
+                        transitionIn: 'flipInX',
+                        transitionOut: 'flipOutX'
+                      });
+                    }, 100)
+                  });
+                }
+                if(aplayerItem.events.events.pause.every(item => {return item.name !== 'messagePause'})) {
+                  aplayerItem.on('pause', function messagePause() {
+                    let index = aplayerItem.list.index;
+                    let title = aplayerItem.list.audios[index].title;
+                    let artist = aplayerItem.list.audios[index].artist;
+                    setTimeout(() => {
+                      // 歌曲播放结束也会触发 pause 事件，为了避免错误提示，等待一会儿
+                      if(aplayerItem.paused) {
+                        VolantisApp.message('音乐通知', title + ' - ' + artist, {
+                          icon: 'fa-solid fa-pause',
+                          transitionIn: 'flipInX',
+                          transitionOut: 'flipOutX'
+                        });
+                      }
+                    }, 100)
+                  });
+                }
+              });
+            }, 500)
+          } catch (error) { console.error(error); }
+        
+      }else{
+        volantis.requestAnimationFrame(SetAPlayerPlugin)
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", ()=>{
+      SetAPlayerPlugin();
+    });
+  
+</script>
+
+
 
 
       <script>
@@ -2993,7 +3027,7 @@ Qu...
   function p_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"MengFanjun020906/comments","repo-id":"R_kgDOIjrvJg","category":"Announcements","category-id":"DIC_kwDOIjrvJs4CS6YN","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN"},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
@@ -3104,6 +3138,55 @@ Qu...
 
 
 
+
+
+  <script>
+  let imgs = ["https://alpha.glilmu.com/i/2022/12/05/he1uuk.jpg"];
+  let index = 0;
+  let IntervalParallax = null;
+
+  function parallax(){
+    let ParallaxWindow = document.querySelector("#parallax-window");
+    
+      ParallaxWindow = document.querySelector("html");
+    
+    Parallax.window = ParallaxWindow;
+    Parallax.options.fade = 1500;
+    Parallax.cache = 1;
+    next_parallax();
+    Parallax.init();
+    if (imgs.length>1) {
+      IntervalParallax = setInterval(function () {
+        next_parallax();
+      }, '10000');
+    }
+  }
+
+  function next_parallax() {
+    if (typeof Parallax == "undefined") {
+      return
+    }
+    
+    if (imgs.length>=1) {
+      Parallax.options.src = imgs[index % imgs.length];
+      Parallax.start();
+      index++;
+      if (Parallax.cache) {
+        fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime());
+        if (index == imgs.length) {
+          Parallax.cache = 0;
+        }
+      }
+    }
+  }
+  var runningOnBrowser = typeof window !== "undefined";
+  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+  if (!isBot) {
+    volantis.js('/js/plugins/parallax.js').then(()=>{
+      parallax()
+    })
+  }
+</script>
 
 
 
