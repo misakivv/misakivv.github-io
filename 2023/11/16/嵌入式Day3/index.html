@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://misakivv.github.io/2023/11/14/嵌入式day1/"/>
+  <link rel="canonical" href="https://misakivv.github.io/2023/11/16/嵌入式day3/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,22 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>嵌入式Day1 - my blog</title>
-  <meta name="keywords" content="嵌入式,Linux基础,null">
+  <title>嵌入式Day3 - my blog</title>
+  <meta name="keywords" content="嵌入式,C++,null">
   <meta desc name="description" content="blog - John Doe - my blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="嵌入式Day1">
-<meta property="og:url" content="https://misakivv.github.io/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay1/index.html">
+<meta property="og:title" content="嵌入式Day3">
+<meta property="og:url" content="https://misakivv.github.io/2023/11/16/%E5%B5%8C%E5%85%A5%E5%BC%8FDay3/index.html">
 <meta property="og:site_name" content="my blog">
-<meta property="og:description" content="Linux基础011.打开终端12ctrl+Alt+t:打开终端ctrl+D:关闭终端  2.命令提示符  1234567891011121314linux@ubuntu:~$   ^    ^    ^^   1    2    34   1.用户名   2.主机名   3.当前所处的工作路径，~：用户主目录   		pwd:查看当前所处的完整路径   linux@ubuntu:~$ pwd">
+<meta property="og:description" content="C++基础01123456C语言中：	输入设备--&gt;输入流--&gt;scanf--&gt;变量	变量--&gt;printf--&gt;输入流--&gt;输出设备C++语言中：	输入设备--&gt;输入流--&gt;cin--&gt;变量	变量--&gt;cout--&gt;输入流--&gt;输出设备  1234567891011121314cout语法形式：    cout&lt;&amp;lt">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-11-14T15:01:50.000Z">
-<meta property="article:modified_time" content="2023-11-14T15:27:01.535Z">
+<meta property="article:published_time" content="2023-11-16T14:49:59.000Z">
+<meta property="article:modified_time" content="2023-11-16T15:02:57.512Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="嵌入式">
-<meta property="article:tag" content="Linux基础">
+<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2569,7 +2569,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://misakivv.github.io/2023/11/14/嵌入式Day1/">
+  <link itemprop="mainEntityOfPage" href="https://misakivv.github.io/2023/11/16/嵌入式Day3/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="my blog">
   </span>
@@ -2590,7 +2590,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        嵌入式Day1
+        嵌入式Day3
       </h1>
       <div class='new-meta-box'>
         
@@ -2626,10 +2626,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-11-14T23:01:50+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-11-16T22:49:59+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年11月14日</p>
+    <p>发布于：2023年11月16日</p>
   </a>
 </div>
 
@@ -2640,7 +2640,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：851 字</p>
+      <p>字数：759 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2670,39 +2670,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="Linux基础01"><a href="#Linux基础01" class="headerlink" title="Linux基础01"></a>Linux基础01</h1><h2 id="1-打开终端"><a href="#1-打开终端" class="headerlink" title="1.打开终端"></a>1.打开终端</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ctrl+Alt+t:打开终端</span><br><span class="line">ctrl+D:关闭终端</span><br></pre></td></tr></table></figure>
+    <h1 id="C-基础01"><a href="#C-基础01" class="headerlink" title="C++基础01"></a>C++基础01</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">C语言中：</span><br><span class="line">	输入设备--&gt;输入流--&gt;scanf--&gt;变量</span><br><span class="line">	变量--&gt;printf--&gt;输入流--&gt;输出设备</span><br><span class="line">C++语言中：</span><br><span class="line">	输入设备--&gt;输入流--&gt;cin--&gt;变量</span><br><span class="line">	变量--&gt;cout--&gt;输入流--&gt;输出设备</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-命令提示符"><a href="#2-命令提示符" class="headerlink" title="2.命令提示符"></a>2.命令提示符</h2><img src="https://pic.imgdb.cn/item/65538c39c458853aefe73722.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65538c39c458853aefe73722.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231031081456228.png">
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">cout语法形式：</span><br><span class="line">    cout&lt;&lt;x&lt;&lt;endl;</span><br><span class="line">x可以是任意的数据类型，甚至是写成表达式，endl是换行符</span><br><span class="line">错误的写法：</span><br><span class="line">    cout&lt;&lt;x,y&lt;&lt;endl;</span><br><span class="line">    在变量键不能使用<span class="string">&quot;,&quot;</span></span><br><span class="line">正确的写法：</span><br><span class="line">    cout&lt;&lt;x&lt;&lt;y;</span><br><span class="line">cin语法形式：</span><br><span class="line">    cin&gt;&gt;x;</span><br><span class="line">x可以是任意的数据类型</span><br><span class="line">    cin&gt;&gt;x&gt;&gt;y;</span><br><span class="line"></span><br><span class="line">	</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">linux@ubuntu:~$</span><br><span class="line">   ^    ^    ^^</span><br><span class="line">   1    2    34</span><br><span class="line">   1.用户名</span><br><span class="line">   2.主机名</span><br><span class="line">   3.当前所处的工作路径，~：用户主目录</span><br><span class="line">   		pwd:查看当前所处的完整路径</span><br><span class="line">   linux@ubuntu:~$ pwd</span><br><span class="line">   /home/linux</span><br><span class="line">   ^    ^</span><br><span class="line">   a    b</span><br><span class="line">   a.根目录</span><br><span class="line">   b.间隔符</span><br><span class="line">   4.$:普通用户权限</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-命令三要素"><a href="#3-命令三要素" class="headerlink" title="3.命令三要素"></a>3.命令三要素</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">命令、可选项、参数</span><br><span class="line">三者之间空格隔开</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-ls"><a href="#4-ls" class="headerlink" title="4.ls"></a>4.ls</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">查看内容</span><br><span class="line">ls -a:查看所有文件，包括隐藏文件（以.开头的文件）</span><br><span class="line">.:当前目录		..:上一级目录</span><br><span class="line">ls -l:查看内容的详细信息</span><br><span class="line">drwxr-xr-x  3 linux linux 4096 Oct 28 22:33 Desktop</span><br><span class="line">^    ^      ^    ^    ^     ^      ^          ^</span><br><span class="line">1    2      3    4    5     6      7          8</span><br><span class="line">1.文件类型</span><br><span class="line">一切皆文件</span><br><span class="line">	-：普通文件</span><br><span class="line">	d：目录文件</span><br><span class="line">	b：块设备文件</span><br><span class="line">	c：字符设备文件</span><br><span class="line">	s：套接字文件</span><br><span class="line">	p：管道文件</span><br><span class="line">	l：链接文件</span><br><span class="line">2.文件权限</span><br><span class="line">	rwxr-xr-x</span><br><span class="line">	三组用户：文件属主、文件属组、其他用户</span><br><span class="line">	r：可读 w：可写 x：可执行 -：没有对应的权限</span><br><span class="line">3.文件链接数</span><br><span class="line">4.文件创建者</span><br><span class="line">5.同组用户</span><br><span class="line">6.文件大小</span><br><span class="line">7.文件最后一次修改时间</span><br><span class="line">8.文件名</span><br></pre></td></tr></table></figure>
+<img src="https://pic.imgdb.cn/item/65562d4ec458853aef96fcf4.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65562d4ec458853aef96fcf4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231101140641409.png">
 
 
 
-<h2 id="5-man"><a href="#5-man" class="headerlink" title="5.man"></a>5.man</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">man 1 命令:查看命令的用法</span><br><span class="line">man 2 系统函数:查看系统函数的用法</span><br><span class="line">man 3 库函数: 查看库函数的用法</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">linux@ubuntu:~/<span class="number">11</span>_1$ vim test01.cpp</span><br><span class="line">linux@ubuntu:~/<span class="number">11</span>_1$ g++ test01.cpp -o test01</span><br><span class="line">linux@ubuntu:~/<span class="number">11</span>_1$ ./test01 </span><br><span class="line"><span class="number">20</span></span><br><span class="line"><span class="number">10</span></span><br><span class="line">linux@ubuntu:~/<span class="number">11</span>_1$ cat test01.cpp </span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> x=<span class="number">20</span>,y=<span class="number">10</span>;</span><br><span class="line">	cout&lt;&lt;x&lt;&lt;endl&lt;&lt;y&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">linux@ubuntu:~/<span class="number">11</span>_1$ </span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<img src="https://pic.imgdb.cn/item/65562d94c458853aef983215.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65562d94c458853aef983215.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231101135559108.png">
 
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">using是编译指令，声明当前命名空间的关键词。可以从字面上理解，翻译成使用。</span><br><span class="line">std::cin</span><br><span class="line">std::cout</span><br></pre></td></tr></table></figure>
 
-<h2 id="6-cd"><a href="#6-cd" class="headerlink" title="6.cd"></a>6.cd</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">切换工作路径</span><br><span class="line">cd 路径</span><br><span class="line">cd ~:切换到用户主目录</span><br><span class="line">cd /:切换到根目录</span><br><span class="line">cd ..:切换到上一级目录</span><br><span class="line">cd ../..:切换到上两级目录</span><br><span class="line">cd -:切换到上一次使用过的目录</span><br><span class="line">相对路径:相对于当前所处的工作路径</span><br><span class="line">绝对路径:以根目录为起始的路径</span><br></pre></td></tr></table></figure>
+<img src="https://pic.imgdb.cn/item/65562db5c458853aef98c183.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65562db5c458853aef98c183.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231101141242080.png">
 
-<h2 id="7-mkdir"><a href="#7-mkdir" class="headerlink" title="7.mkdir"></a>7.mkdir</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">创建目录</span><br><span class="line">mkdir 目录名</span><br><span class="line">mkdir -p 父目录/子目录:递归创建多级目录</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">linux@ubuntu:~/11_1$ cat test02.cpp </span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">namespace A</span><br><span class="line">&#123;</span><br><span class="line">   int x=1;</span><br><span class="line">	void fun()&#123;</span><br><span class="line">	cout&lt;&lt;&quot;A namespace&quot;&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">using namespace A;//声明使用命名空间A</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	fun();		//在前面声明了命名空间A后，才能直接使用fun()函数；否则要写成A::fun();</span><br><span class="line">	A::x=3;			//将A命名空间下的x重新赋值为3</span><br><span class="line">	cout&lt;&lt;A::x&lt;&lt;endl;	//打印A命名空间下x的值</span><br><span class="line">	A::fun();		//调用A命名空间下fun()。</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="8-touch"><a href="#8-touch" class="headerlink" title="8.touch"></a>8.touch</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">创建文件</span><br><span class="line">touch 文件名</span><br><span class="line">1.文件不存在，创建文件</span><br><span class="line">2.文件存在，更改文件最后一次修改时间</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="面向对象的三大特征：继承，多态，封装"><a href="#面向对象的三大特征：继承，多态，封装" class="headerlink" title="面向对象的三大特征：继承，多态，封装"></a>面向对象的三大特征：继承，多态，封装</h2><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">类是C++的核心特征，通常被称为用户定义的类型。类用于指定对象的形式，包含数据表示法和用于处理数据的方法。类中的数据和方法被称为类的成员。</span><br></pre></td></tr></table></figure>
 
-<h2 id="9-cp"><a href="#9-cp" class="headerlink" title="9.cp"></a>9.cp</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">拷贝文件或目录</span><br><span class="line">文件：</span><br><span class="line">	cp 源文件 目标文件（拷贝到当前目录）</span><br><span class="line">	cp 源目录 路径</span><br><span class="line">	linux@ubuntu:~/10_30$ touch hello.c</span><br><span class="line">	linux@ubuntu:~/10_30$ ls -l</span><br><span class="line">	total 4</span><br><span class="line">	drwxr-xr-x 3 linux linux 4096 Oct 29 19:38 a</span><br><span class="line">	-rw-r--r-- 1 linux linux    0 Oct 29 19:42 hello.c</span><br><span class="line">	linux@ubuntu:~/10_30$ cp hello.c test.c</span><br><span class="line">	linux@ubuntu:~/10_30$ ls</span><br><span class="line">	a  hello.c  test.c</span><br><span class="line">	linux@ubuntu:~/10_30$ cp hello.c ./a</span><br><span class="line">	linux@ubuntu:~/10_30$ ls ./a</span><br><span class="line">	b  hello.c</span><br><span class="line">	linux@ubuntu:~/10_30$ cp hello.c ./a/test.c</span><br><span class="line">	linux@ubuntu:~/10_30$ ls ./a</span><br><span class="line">	b  hello.c  test.c</span><br><span class="line">目录：</span><br><span class="line">	cp -r 源目录 目标目录：拷贝到当前目录</span><br><span class="line">	cp -r 源目录 路径：拷贝目录到指定路径</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">linux@ubuntu:~/11_1$ cat test03.cpp</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;string&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">class Dog	//定义一个Dog狗，起的类名要尽量贴近这个类，见名知意</span><br><span class="line">&#123;</span><br><span class="line">	public :	//访问限定符public(共有的)</span><br><span class="line">		string name;	//定义一个字符串变量，要使用头文件string</span><br><span class="line">		int age;</span><br><span class="line">		void run()&#123;	//run()是为了打印狗的名字和年龄</span><br><span class="line">			cout&lt;&lt;&quot;狗狗的名字是： &quot;&lt;&lt;name&lt;&lt;&quot;,年龄为：&quot;&lt;&lt;age&lt;&lt;endl;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	Dog dog1;	//从zhai中实例化一个对象dog1（随意起名）</span><br><span class="line">	dog1.name=&quot;雪碧&quot;;	//为dog1的成员变量赋值</span><br><span class="line">	dog1.age=3;	</span><br><span class="line">	dog1.run();	//打印dog1的相关变量信息</span><br><span class="line">	Dog *dog2=new Dog(); //从堆中实例化对象，使用关键字new的都是从堆中实例化对象</span><br><span class="line">	if(NULL==dog2)&#123;	//从堆中实例化对象需要开辟空间，指针会指向那个内存</span><br><span class="line">		return 0;	//如果new没有申请成功内存空间，程序会自动退出</span><br><span class="line">	&#125;</span><br><span class="line">	dog2-&gt;name=&quot;柴柴&quot;;	//为dog2的成员变量赋值</span><br><span class="line">	dog2-&gt;age=2;	//为dog2的成员变量赋值</span><br><span class="line">	dog2-&gt;run();	//为dog2的成员变量赋值</span><br><span class="line">	delete dog2;	//释放内存</span><br><span class="line">	dog2=NULL;	//将dog2重新指向NULL</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h2 id="10-mv"><a href="#10-mv" class="headerlink" title="10.mv"></a>10.mv</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">移动或者重命名</span><br><span class="line">1.移动</span><br><span class="line">mv 源文件 路径：移动文件到指定路径</span><br><span class="line">mv 源目录 路径：移动目录到指定路径</span><br><span class="line">2.重命名</span><br><span class="line">mv 源文件 目标文件：重命名</span><br><span class="line">mv 源目录 目标目录：重命名</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<img src="https://pic.imgdb.cn/item/65562ed3c458853aef9db24f.jpg" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65562ed3c458853aef9db24f.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="blob">
 
-<h2 id="11-补充"><a href="#11-补充" class="headerlink" title="11.补充"></a>11.补充</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tab键：自动补全</span><br><span class="line">clear/ctrl l:清屏操作</span><br><span class="line">方向键上下键：上下查看使用过的指令</span><br><span class="line">history:查看历史指令</span><br></pre></td></tr></table></figure>
-
-<h2 id="12-rm"><a href="#12-rm" class="headerlink" title="12.rm"></a>12.rm</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">删除</span><br><span class="line">rm 文件名</span><br><span class="line">rm -r 目录名</span><br><span class="line">	-i:显示提示信息</span><br><span class="line">	-f:强制删除</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
-
-<h2 id="13-练习"><a href="#13-练习" class="headerlink" title="13.练习"></a>13.练习</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.在用户主目录创建以你的名字命名的目录</span><br><span class="line">2.在该目录下创建dir1、dir2、dir3目录</span><br><span class="line">3.重命名dir1目录为test01</span><br><span class="line">4.复制dir3目录到test01目录中</span><br><span class="line">5.在dir2目录中创建test01.c、test02.c文件</span><br><span class="line">6.移动test02.c文件到dir3目录中</span><br><span class="line">7.删除test01目录</span><br></pre></td></tr></table></figure>
-
-<img src="https://pic.imgdb.cn/item/65538c52c458853aefe7a0e7.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65538c52c458853aefe7a0e7.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231030140357843.png">
 
   </div>
   
@@ -2727,10 +2718,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-14T23:27:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-16T23:02:57+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年11月14日</p>
+    <p>更新于：2023年11月16日</p>
   </a>
 </div>
 
@@ -2741,7 +2732,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：851 字</p>
+      <p>字数：759 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2759,8 +2750,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>嵌入式</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Linux%E5%9F%BA%E7%A1%80/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Linux基础</p></a></div>
-  <span hidden itemprop="keywords">嵌入式 Linux基础</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>嵌入式</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/C/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>C++</p></a></div>
+  <span hidden itemprop="keywords">嵌入式 C++</span>
   
 
 
@@ -2774,7 +2765,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://misakivv.github.io/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay1/&title=嵌入式Day1 - my blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://misakivv.github.io/2023/11/16/%E5%B5%8C%E5%85%A5%E5%BC%8FDay3/&title=嵌入式Day3 - my blog&summary="
           
           >
           
@@ -2786,7 +2777,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://misakivv.github.io/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay1/&title=嵌入式Day1 - my blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://misakivv.github.io/2023/11/16/%E5%B5%8C%E5%85%A5%E5%BC%8FDay3/&title=嵌入式Day3 - my blog&summary="
           
           >
           
@@ -2798,7 +2789,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://misakivv.github.io/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay1/&title=嵌入式Day1 - my blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://misakivv.github.io/2023/11/16/%E5%B5%8C%E5%85%A5%E5%BC%8FDay3/&title=嵌入式Day3 - my blog&summary="
           
           >
           
@@ -2831,17 +2822,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay2/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>嵌入式Day2</p>
+      
+        <a class='next' href='/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay2/'>
+          <p class='title'>嵌入式Day2<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>Linux基础021.sudo1临时root用户权限
 
 2.su1234567891011切换用户su 用户名linux@ubuntu:~$ su rootPassword: root@ubun...</p>
-        </a>
-      
-      
-        <a class='next' href='/2023/11/11/hello-world/'>
-          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
         </a>
       
     </div>
@@ -2860,7 +2846,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay1/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/11/16/%E5%B5%8C%E5%85%A5%E5%BC%8FDay3/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2902,7 +2888,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%89%93%E5%BC%80%E7%BB%88%E7%AB%AF"><span class="toc-text">1.打开终端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%91%BD%E4%BB%A4%E6%8F%90%E7%A4%BA%E7%AC%A6"><span class="toc-text">2.命令提示符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%91%BD%E4%BB%A4%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-text">3.命令三要素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-ls"><span class="toc-text">4.ls</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-man"><span class="toc-text">5.man</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-cd"><span class="toc-text">6.cd</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-mkdir"><span class="toc-text">7.mkdir</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-touch"><span class="toc-text">8.touch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-cp"><span class="toc-text">9.cp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-mv"><span class="toc-text">10.mv</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E8%A1%A5%E5%85%85"><span class="toc-text">11.补充</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-rm"><span class="toc-text">12.rm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-%E7%BB%83%E4%B9%A0"><span class="toc-text">13.练习</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81%EF%BC%9A%E7%BB%A7%E6%89%BF%EF%BC%8C%E5%A4%9A%E6%80%81%EF%BC%8C%E5%B0%81%E8%A3%85"><span class="toc-text">面向对象的三大特征：继承，多态，封装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%92%8C%E5%AF%B9%E8%B1%A1"><span class="toc-text">类和对象</span></a></li></ol>
   </div>
 </section>
 
@@ -3990,7 +3976,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://misakivv.github.io/","name":"my blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://misakivv.github.io/categories/嵌入式实训/","name":"嵌入式实训"}},{"@type":"ListItem","position":3,"item":{"@id":"https://misakivv.github.io/2023/11/14/嵌入式Day1/","name":"嵌入式Day1"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"my blog","url":"https://misakivv.github.io/","keywords":null,"description":"blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","description":"blog"},"publisher":{"@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://misakivv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"嵌入式Day1","description":"blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://misakivv.github.io/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay1/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/"},"publisher":{"@type":"Organization","name":"my blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://misakivv.github.io/2023/11/14/%E5%B5%8C%E5%85%A5%E5%BC%8FDay1/","wordCount":0,"datePublished":"2023-11-14T15:01:50.000Z","dateModified":"2023-11-14T15:27:01.535Z","articleSection":"嵌入式实训","keywords":"嵌入式,Linux基础","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://misakivv.github.io/","name":"my blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://misakivv.github.io/categories/嵌入式实训/","name":"嵌入式实训"}},{"@type":"ListItem","position":3,"item":{"@id":"https://misakivv.github.io/2023/11/16/嵌入式Day3/","name":"嵌入式Day3"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"my blog","url":"https://misakivv.github.io/","keywords":null,"description":"blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","description":"blog"},"publisher":{"@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://misakivv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"嵌入式Day3","description":"blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://misakivv.github.io/2023/11/16/%E5%B5%8C%E5%85%A5%E5%BC%8FDay3/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/"},"publisher":{"@type":"Organization","name":"my blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://misakivv.github.io/2023/11/16/%E5%B5%8C%E5%85%A5%E5%BC%8FDay3/","wordCount":0,"datePublished":"2023-11-16T14:49:59.000Z","dateModified":"2023-11-16T15:02:57.512Z","articleSection":"嵌入式实训","keywords":"嵌入式,C++","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
