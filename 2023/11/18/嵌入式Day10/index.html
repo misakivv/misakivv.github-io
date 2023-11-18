@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://misakivv.github.io/tags/"/>
+  
+  <link rel="canonical" href="https://misakivv.github.io/2023/11/18/嵌入式day10/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,20 +33,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>所有标签 - my blog</title>
-  <meta name="keywords" content="null">
+  <title>嵌入式Day10 - my blog</title>
+  <meta name="keywords" content="Qt,null">
   <meta desc name="description" content="blog - John Doe - my blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="所有标签">
-<meta property="og:url" content="https://misakivv.github.io/tags/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="嵌入式Day10">
+<meta property="og:url" content="https://misakivv.github.io/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay10/index.html">
 <meta property="og:site_name" content="my blog">
-<meta property="og:description" content="blog">
+<meta property="og:description" content="QT多线程02继承QObject的线程  继承QObject类更加灵活。它通过 QObject::moveToThread()方法将它移到一个 QThread 线程里 执行。那么可以通过主线程发送信号去调用 QThread 线程的方法如上图的 fun4()，fun5()等等。这些方 法都是在 QThread 线程里执行的。 1234567891011121314151617181920212223">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-11-14T14:44:37.336Z">
-<meta property="article:modified_time" content="2023-11-14T14:44:37.336Z">
+<meta property="article:published_time" content="2023-11-18T08:46:58.000Z">
+<meta property="article:modified_time" content="2023-11-18T08:50:46.574Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Qt">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2118,7 +2119,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2482,7 +2483,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-      <div class="cover-wrapper tag search" id='half'>
+      <div class="cover-wrapper post search" id='half'>
         
   <div id="parallax-window"></div>
 
@@ -2565,23 +2566,330 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://misakivv.github.io/2023/11/18/嵌入式Day10/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="my blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="my blog">
+    <meta itemprop="description" content="blog">
+  </span>
   
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
     
-      <div class='post-wrapper'>
-        <article id="tag" class="post article white-box reveal shadow floatable blur">
-          <h2>所有标签</h2>
-          <div class="all-tags">
-            
-            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux%E5%9F%BA%E7%A1%80/" rel="tag">Linux基础</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Qt/" rel="tag">Qt</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" rel="tag">嵌入式</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AE%80%E5%8E%86%E6%A0%BC%E5%BC%8F/" rel="tag">简历格式</a><span class="tag-list-count">1</span></li></ul>
-          </div>
-          <br>
+    
+    
+      <h1 class="title" itemprop="name headline">
+        嵌入式Day10
+      </h1>
+      <div class='new-meta-box'>
+        
           
-        </article>
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://pic.imgdb.cn/item/65532ad8c458853aefb2824a.jpg" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65532ad8c458853aefb2824a.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">misakivv</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AE%9E%E8%AE%AD/">嵌入式实训</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AE%9E%E8%AE%AD/" itemprop="url"><span itemprop="name">嵌入式实训</span></a>
+      </span>
+    
+  </div>
+  
+
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-11-18T16:46:58+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年11月18日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：3.2k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：13 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
     
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="QT多线程02"><a href="#QT多线程02" class="headerlink" title="QT多线程02"></a>QT多线程02</h1><h2 id="继承QObject的线程"><a href="#继承QObject的线程" class="headerlink" title="继承QObject的线程"></a>继承QObject的线程</h2><img src="https://pic.imgdb.cn/item/65507febc458853aef4c9293.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65507febc458853aef4c9293.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231108095856871.png">
+
+<p>继承QObject类更加灵活。它通过 QObject::moveToThread()方法将它移到一个 QThread 线程里 执行。那么可以通过主线程发送信号去调用 QThread 线程的方法如上图的 fun4()，fun5()等等。这些方 法都是在 QThread 线程里执行的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line">mainwindow.h</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> MAINWINDOW_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAINWINDOW_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QMainWindow&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QThread&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QDebug&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QPushButton&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QMutexLocker&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QMutex&gt;</span></span></span><br><span class="line"><span class="comment">/* 工人类 */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Worker</span>;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MainWindow</span> : <span class="keyword">public</span> QMainWindow</span><br><span class="line">&#123;</span><br><span class="line">Q_OBJECT</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="built_in">MainWindow</span>(QWidget *parent = <span class="literal">nullptr</span>);</span><br><span class="line">~<span class="built_in">MainWindow</span>();</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="comment">/* 开始线程按钮 */</span></span><br><span class="line">QPushButton *pushButton1;</span><br><span class="line">QPushButton *pushButton2;</span><br><span class="line"><span class="comment">/* 全局线程 */</span></span><br><span class="line">QThread workerThread;</span><br><span class="line"><span class="comment">/* 工人类 */</span></span><br><span class="line">Worker *worker;</span><br><span class="line"><span class="keyword">private</span> slots:</span><br><span class="line"><span class="comment">/* 按钮 1 点击开启线程 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">pushButton1Clicked</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">/* 按钮 2 点击打断线程 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">pushButton2Clicked</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">/* 用于接收工人是否在工作的信号 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">handleResults</span><span class="params">(<span class="type">const</span> QString &amp;)</span></span>;</span><br><span class="line">signals:</span><br><span class="line"><span class="comment">/* 工人开始工作（做些耗时的操作 ） */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">startWork</span><span class="params">(<span class="type">const</span> QString &amp;)</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">/* Worker 类，这个类声明了 doWork1 函数，将整个 Worker 类移至线程 workerThread*/</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Worker</span> : <span class="keyword">public</span> QObject</span><br><span class="line">&#123;</span><br><span class="line">Q_OBJECT</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="comment">/* 互斥锁 */</span></span><br><span class="line">QMutex lock;</span><br><span class="line"><span class="comment">/* 标志位 */</span></span><br><span class="line"><span class="type">bool</span> isCanRun;</span><br><span class="line"><span class="keyword">public</span> slots:</span><br><span class="line"><span class="comment">/* 耗时的工作都放在槽函数下，工人可以有多份不同的工作，但是每次只能去做一份 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">doWork1</span><span class="params">(<span class="type">const</span> QString &amp;parameter)</span> </span>&#123;</span><br><span class="line"><span class="comment">/* 标志位为真 */</span></span><br><span class="line">isCanRun = <span class="literal">true</span>;</span><br><span class="line"><span class="comment">/* 死循环 */</span></span><br><span class="line"><span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line"><span class="comment">/* 此&#123;&#125;作用是 QMutexLocker 与 lock 的作用范围，获取锁后，</span></span><br><span class="line"><span class="comment">* 运行完成后即解锁 */</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="function">QMutexLocker <span class="title">locker</span><span class="params">(&amp;lock)</span></span>;</span><br><span class="line"><span class="comment">/* 如果标志位不为真 */</span></span><br><span class="line"><span class="keyword">if</span> (!isCanRun) &#123;</span><br><span class="line"><span class="comment">/* 跳出循环 */</span></span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 使用 QThread 里的延时函数，当作一个普通延时 */</span></span><br><span class="line">QThread::<span class="built_in">sleep</span>(<span class="number">2</span>);</span><br><span class="line"><span class="function">emit <span class="title">resultReady</span><span class="params">(parameter + <span class="string">&quot;doWork1 函数&quot;</span>)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* doWork1 运行完成，发送信号 */</span></span><br><span class="line"><span class="function">emit <span class="title">resultReady</span><span class="params">(<span class="string">&quot;打断 doWork1 函数&quot;</span>)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// void doWork2();...</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="comment">/* 打断线程（注意此方法不能放在槽函数下） */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">stopWork</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="built_in">qDebug</span>()&lt;&lt;<span class="string">&quot;打断线程&quot;</span>&lt;&lt;endl;</span><br><span class="line"><span class="comment">/* 获取锁后，运行完成后即解锁 */</span></span><br><span class="line"><span class="function">QMutexLocker <span class="title">locker</span><span class="params">(&amp;lock)</span></span>;</span><br><span class="line">isCanRun = <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line">signals:</span><br><span class="line"><span class="comment">/* 工人工作函数状态的信号 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">resultReady</span><span class="params">(<span class="type">const</span> QString &amp;result)</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">// MAINWINDOW_H</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>第 51<del>105 行，声明一个 Worker 的类继承 QObject 类，这里是参考 Qt 的 QThread 类的帮助文档的 写法。 第 62</del>88 行，我们把耗时的工作都放于槽函数下。工人可以有不同的工作，但是每次只能去做一份。 这里不同于继承 QThread 类的线程 run()，继承 QThread 的类只有 run()在新线程里。而继承 QObject 的类，使用 moveToThread()可以把整个继承的 QObject 类移至线程里执行，所以可以有 doWork1(),doWork2…等等耗时的操作，但是这些耗时的操作都应该作为槽函数，由主线程去调用。 第 67~80 行，进入循环后使用互拆锁判断 isCanRun 变量的状态，为假即跳出 while 循环，直到 doWork1 结束。注意，虽然 doWork1 结束了，但是线程并没有退出（结束）。因为我们把这个类移到 线程里了，直到这个类被销毁。或者使用 quit()和 exit()退出线程才真正的结束！</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">mainwindow.cpp</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;mainwindow.h&quot;</span></span></span><br><span class="line">MainWindow::<span class="built_in">MainWindow</span>(QWidget *parent)</span><br><span class="line">: <span class="built_in">QMainWindow</span>(parent)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">/* 设置显示位置与大小 */</span></span><br><span class="line"><span class="keyword">this</span>-&gt;<span class="built_in">setGeometry</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">800</span>, <span class="number">480</span>);</span><br><span class="line">pushButton1 = <span class="keyword">new</span> <span class="built_in">QPushButton</span>(<span class="keyword">this</span>);</span><br><span class="line">pushButton2 = <span class="keyword">new</span> <span class="built_in">QPushButton</span>(<span class="keyword">this</span>);</span><br><span class="line"><span class="comment">/* 设置按钮的位置大小 */</span></span><br><span class="line">pushButton1-&gt;<span class="built_in">setGeometry</span>(<span class="number">300</span>, <span class="number">200</span>, <span class="number">80</span>, <span class="number">40</span>);</span><br><span class="line">pushButton2-&gt;<span class="built_in">setGeometry</span>(<span class="number">400</span>, <span class="number">200</span>, <span class="number">80</span>, <span class="number">40</span>);</span><br><span class="line"><span class="comment">/* 设置两个按钮的文本 */</span></span><br><span class="line">pushButton1-&gt;<span class="built_in">setText</span>(<span class="string">&quot;开启线程&quot;</span>);</span><br><span class="line">pushButton2-&gt;<span class="built_in">setText</span>(<span class="string">&quot;打断线程&quot;</span>);</span><br><span class="line">worker = <span class="keyword">new</span> Worker;</span><br><span class="line"><span class="comment">/* 将 worker 类移至线程 workerThread */</span></span><br><span class="line">worker-&gt;<span class="built_in">moveToThread</span>(&amp;workerThread);</span><br><span class="line"><span class="comment">/* 信号槽连接 */</span></span><br><span class="line"><span class="comment">/* 线程完成销毁对象 */</span></span><br><span class="line"><span class="built_in">connect</span>(&amp;workerThread, <span class="built_in">SIGNAL</span>(<span class="built_in">finished</span>()),</span><br><span class="line">worker, <span class="built_in">SLOT</span>(<span class="built_in">deleteLater</span>()));</span><br><span class="line"><span class="built_in">connect</span>(&amp;workerThread, <span class="built_in">SIGNAL</span>(<span class="built_in">finished</span>()),</span><br><span class="line">&amp;workerThread, <span class="built_in">SLOT</span>(<span class="built_in">deleteLater</span>()));</span><br><span class="line"><span class="comment">/* 发送开始工作的信号，开始工作 */</span></span><br><span class="line"><span class="built_in">connect</span>(<span class="keyword">this</span>, <span class="built_in">SIGNAL</span>(<span class="built_in">startWork</span>(QString)),</span><br><span class="line">worker, <span class="built_in">SLOT</span>(<span class="built_in">doWork1</span>(QString)));</span><br><span class="line"><span class="comment">/* 接收到 worker 发送过来的信号 */</span></span><br><span class="line"><span class="built_in">connect</span>(worker, <span class="built_in">SIGNAL</span>(<span class="built_in">resultReady</span>(QString)),</span><br><span class="line"><span class="keyword">this</span>, <span class="built_in">SLOT</span>(<span class="built_in">handleResults</span>(QString)));</span><br><span class="line"><span class="comment">/* 点击按钮开始线程 */</span></span><br><span class="line"><span class="built_in">connect</span>(pushButton1, <span class="built_in">SIGNAL</span>(<span class="built_in">clicked</span>()),</span><br><span class="line"><span class="keyword">this</span>, <span class="built_in">SLOT</span>(<span class="built_in">pushButton1Clicked</span>()));</span><br><span class="line"><span class="comment">/* 点击按钮打断线程 */</span></span><br><span class="line"><span class="built_in">connect</span>(pushButton2, <span class="built_in">SIGNAL</span>(<span class="built_in">clicked</span>()),</span><br><span class="line"><span class="keyword">this</span>, <span class="built_in">SLOT</span>(<span class="built_in">pushButton2Clicked</span>()));</span><br><span class="line">&#125;</span><br><span class="line">MainWindow::~<span class="built_in">MainWindow</span>()</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">/* 打断线程再退出 */</span></span><br><span class="line">worker-&gt;<span class="built_in">stopWork</span>();</span><br><span class="line">workerThread.<span class="built_in">quit</span>();</span><br><span class="line"><span class="comment">/* 阻塞线程 2000ms，判断线程是否结束 */</span></span><br><span class="line"><span class="keyword">if</span> (workerThread.<span class="built_in">wait</span>(<span class="number">2000</span>)) &#123;</span><br><span class="line"><span class="built_in">qDebug</span>()&lt;&lt;<span class="string">&quot;线程结束&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::pushButton1Clicked</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 字符串常量 */</span></span><br><span class="line"><span class="type">const</span> QString str = <span class="string">&quot;正在运行&quot;</span>;</span><br><span class="line"><span class="comment">/* 判断线程是否在运行 */</span></span><br><span class="line"><span class="keyword">if</span>(!workerThread.<span class="built_in">isRunning</span>()) &#123;</span><br><span class="line"><span class="comment">/* 开启线程 */</span></span><br><span class="line">workerThread.<span class="built_in">start</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 发送正在运行的信号，线程收到信号后执行后返回线程耗时函数 + 此字符串 */</span></span><br><span class="line">emit <span class="keyword">this</span>-&gt;<span class="built_in">startWork</span>(str);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::pushButton2Clicked</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 如果线程在运行 */</span></span><br><span class="line"><span class="keyword">if</span>(workerThread.<span class="built_in">isRunning</span>()) &#123;</span><br><span class="line"><span class="comment">/* 停止耗时工作，跳出耗时工作的循环 */</span></span><br><span class="line">worker-&gt;<span class="built_in">stopWork</span>();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::handleResults</span><span class="params">(<span class="type">const</span> QString &amp; results)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 打印线程的状态 */</span></span><br><span class="line"><span class="built_in">qDebug</span>()&lt;&lt;<span class="string">&quot;线程的状态：&quot;</span>&lt;&lt;results&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>第 20 行，工人类实例化。继承 QObject 的多线程类不能指定父对象。 第 24 行，工人类实例化后，工人类将自己移至 workerThread 线程里执行。 第 29~32 行，线程结束后，我们需要使用 deleteLater 来销毁 worker 对象和 workerThread对象分配 的内存。deleteLater 会确认消息循环中没有这两个线程的对象后销毁。</p>
+<h2 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Qt网络模块为我们提供了编写 TCP / IP 客户端和服务器的类。它提供了较低级别的类，例如代表低级网络</span><br><span class="line">概念的 QTcpSocket，QTcpServer 和 QUdpSocket，以及诸如 QNetworkRequest，QNetworkReply</span><br><span class="line">和 QNetworkAccessManager 之类的高级类来执行使用通用协议的网络操作。 它还提供了诸如</span><br><span class="line">QNetworkConfiguration，QNetworkConfigurationManager和QNetworkSession等类，实现承载</span><br><span class="line">管理。</span><br><span class="line">想要在程序中使用 Qt 网络模块，我们需要在 pro 项目配置文件里增加下面的一条语句。</span><br><span class="line">QT += network</span><br></pre></td></tr></table></figure>
+
+<h2 id="获取本机的网络信息"><a href="#获取本机的网络信息" class="headerlink" title="获取本机的网络信息"></a>获取本机的网络信息</h2><p>为什么先写获取本机网络信息的内容呢？在建立网络通信之前我们至少得获取对方的 IP地址。在网络应 用中，经常需要用到本机的主机名、IP 地址、MAC 地址等网络信息，通常通在 Windows 通过调出命 令行 cmd 窗口输入 ipconfig 或者在 Linux 系统中使用 ifconfig 命令就可以查看相关信息了，在这里我 们利用 Qt 做出一个可以查询的界面和功能出来。 </p>
+<p>Qt 提供了 QHostInfo 和 QNetworkInterface 类可以用于此类信息查询。更多关于 QHostInfo和 QNetworkInterface 的相关函数可以在 Qt 的帮助文档中找到。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//networkhostinfo.pro</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">QT += core gui network</span><br><span class="line"><span class="built_in">greaterThan</span>(QT_MAJOR_VERSION, <span class="number">4</span>): QT += widgets</span><br><span class="line">CONFIG += c++<span class="number">11</span></span><br><span class="line"># The following define makes your compiler emit warnings <span class="keyword">if</span> you use</span><br><span class="line"><span class="meta"># any Qt feature that has been marked deprecated (the exact warnings</span></span><br><span class="line"><span class="meta"># depend on your compiler). Please consult the documentation of the</span></span><br><span class="line"><span class="meta"># deprecated API in order to know how to port your code away from it.</span></span><br><span class="line">DEFINES += QT_DEPRECATED_WARNINGS</span><br><span class="line"># You can also make your code fail to compile <span class="keyword">if</span> it uses deprecated APIs.</span><br><span class="line"># In order to <span class="keyword">do</span> so, uncomment the following line.</span><br><span class="line"># You can also select to disable deprecated APIs only up to a certain</span><br><span class="line"><span class="meta">#version of Qt.</span></span><br><span class="line">#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=<span class="number">0x060000</span> <span class="meta"># disables all the</span></span><br><span class="line">#APIs deprecated before Qt <span class="number">6.0</span><span class="number">.0</span></span><br><span class="line">SOURCES += \</span><br><span class="line">main.cpp \</span><br><span class="line">mainwindow.cpp</span><br><span class="line">HEADERS += \</span><br><span class="line">mainwindow.h</span><br><span class="line"># Default rules <span class="keyword">for</span> deployment.</span><br><span class="line">qnx: target.path = /tmp/$$&#123;TARGET&#125;/bin</span><br><span class="line"><span class="keyword">else</span>: unix:!android: target.path = /opt/$$&#123;TARGET&#125;/bin</span><br><span class="line">!<span class="built_in">isEmpty</span>(target.path): INSTALLS += target</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//mainwindow.h</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">ifndef</span> MAINWINDOW_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAINWINDOW_H</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QMainWindow&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QPushButton&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QTextBrowser&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QVBoxLayout&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QHBoxLayout&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QTimer&gt;</span></span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MainWindow</span> : <span class="keyword">public</span> QMainWindow</span><br><span class="line">&#123;</span><br><span class="line">Q_OBJECT</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="built_in">MainWindow</span>(QWidget *parent = <span class="literal">nullptr</span>);</span><br><span class="line">~<span class="built_in">MainWindow</span>();</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line"><span class="comment">/* 点击获取和清空文本按钮 */</span></span><br><span class="line">QPushButton *pushButton[<span class="number">2</span>];</span><br><span class="line"><span class="comment">/* 文本浏览框用于显示本机的信息 */</span></span><br><span class="line">QTextBrowser *textBrowser;</span><br><span class="line"><span class="comment">/* 水平 Widget 容器和垂直 Widget 容器*/</span></span><br><span class="line">QWidget *hWidget;</span><br><span class="line">QWidget *vWidget;</span><br><span class="line"><span class="comment">/* 水平布局和垂直布局 */</span></span><br><span class="line">QHBoxLayout *hBoxLayout;</span><br><span class="line">QVBoxLayout *vBoxLayout;</span><br><span class="line"><span class="comment">/* 定时器 */</span></span><br><span class="line">QTimer *timer;</span><br><span class="line"><span class="comment">/* 获取本机的网络的信息，返回类型是 QString */</span></span><br><span class="line"><span class="function">QString <span class="title">getHostInfo</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">private</span> slots:</span><br><span class="line"><span class="comment">/* 定时器槽函数，点击按钮后定时触发 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">timerTimeOut</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">/* 显示本机信息 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">showHostInfo</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">/* 启动定时器 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">timerStart</span><span class="params">()</span></span>;</span><br><span class="line"><span class="comment">/* 清空 textBrowser 的信息 */</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">clearHostInfo</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span> <span class="comment">// MAINWINDOW_H</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>头文件里主要是声明两个按钮和一个文本浏览框。另外还有一个定时器，声明一些槽函数。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//mainwindow.cpp</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;mainwindow.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QtNetwork/QNetworkInterface&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QtNetwork/QHostInfo&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QThread&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QDebug&gt;</span></span></span><br><span class="line">MainWindow::<span class="built_in">MainWindow</span>(QWidget *parent)</span><br><span class="line">: <span class="built_in">QMainWindow</span>(parent)</span><br><span class="line">&#123;</span><br><span class="line"><span class="comment">/* 设置位置与大小 */</span></span><br><span class="line"><span class="keyword">this</span>-&gt;<span class="built_in">setGeometry</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">800</span>, <span class="number">480</span>);</span><br><span class="line"><span class="comment">/* 点击获取本地信息按钮和清空文本按钮 */</span></span><br><span class="line">pushButton[<span class="number">0</span>] = <span class="keyword">new</span> <span class="built_in">QPushButton</span>();</span><br><span class="line">pushButton[<span class="number">1</span>] = <span class="keyword">new</span> <span class="built_in">QPushButton</span>();</span><br><span class="line">pushButton[<span class="number">0</span>]-&gt;<span class="built_in">setText</span>(<span class="string">&quot;获取本机信息&quot;</span>);</span><br><span class="line">pushButton[<span class="number">1</span>]-&gt;<span class="built_in">setText</span>(<span class="string">&quot;清空文本信息&quot;</span>);</span><br><span class="line"><span class="comment">/* 按钮的大小根据文本自适应，</span></span><br><span class="line"><span class="comment">* 注意 setSizePolicy 需要在布局中使用 */</span></span><br><span class="line">pushButton[<span class="number">0</span>]-&gt;<span class="built_in">setSizePolicy</span>(QSizePolicy::Fixed,</span><br><span class="line">QSizePolicy::Fixed);</span><br><span class="line">pushButton[<span class="number">1</span>]-&gt;<span class="built_in">setSizePolicy</span>(QSizePolicy::Fixed,</span><br><span class="line">QSizePolicy::Fixed);</span><br><span class="line"><span class="comment">/* 水平 Widget 和垂直 Widget 用于添加布局 */</span></span><br><span class="line">hWidget = <span class="keyword">new</span> <span class="built_in">QWidget</span>();</span><br><span class="line">vWidget = <span class="keyword">new</span> <span class="built_in">QWidget</span>();</span><br><span class="line"><span class="comment">/* 水平布局和垂直布局 */</span></span><br><span class="line">hBoxLayout = <span class="keyword">new</span> <span class="built_in">QHBoxLayout</span>();</span><br><span class="line">vBoxLayout = <span class="keyword">new</span> <span class="built_in">QVBoxLayout</span>();</span><br><span class="line"><span class="comment">/* 文本浏览框 */</span></span><br><span class="line">textBrowser = <span class="keyword">new</span> <span class="built_in">QTextBrowser</span>();</span><br><span class="line"><span class="comment">/* 添加到水平布局 */</span></span><br><span class="line">hBoxLayout-&gt;<span class="built_in">addWidget</span>(pushButton[<span class="number">0</span>]);</span><br><span class="line">hBoxLayout-&gt;<span class="built_in">addWidget</span>(pushButton[<span class="number">1</span>]);</span><br><span class="line"><span class="comment">/* 将水平布局设置为 hWidget 的布局 */</span></span><br><span class="line">hWidget-&gt;<span class="built_in">setLayout</span>(hBoxLayout);</span><br><span class="line"><span class="comment">/* 将文本浏览框和 hWidget 添加到垂直布局 */</span></span><br><span class="line">vBoxLayout-&gt;<span class="built_in">addWidget</span>(textBrowser);</span><br><span class="line">vBoxLayout-&gt;<span class="built_in">addWidget</span>(hWidget);</span><br><span class="line"><span class="comment">/* 将垂直布局设置为 vWidget 的布局 */</span></span><br><span class="line">vWidget-&gt;<span class="built_in">setLayout</span>(vBoxLayout);</span><br><span class="line"><span class="comment">/* 设置 vWidget 为中心部件 */</span></span><br><span class="line"><span class="built_in">setCentralWidget</span>(vWidget);</span><br><span class="line"><span class="comment">/* 定时器初始化 */</span></span><br><span class="line">timer = <span class="keyword">new</span> <span class="built_in">QTimer</span>();</span><br><span class="line"><span class="comment">/* 信号槽连接 */</span></span><br><span class="line"><span class="built_in">connect</span>(pushButton[<span class="number">0</span>], <span class="built_in">SIGNAL</span>(<span class="built_in">clicked</span>()),</span><br><span class="line"><span class="keyword">this</span>, <span class="built_in">SLOT</span>(<span class="built_in">timerStart</span>()));</span><br><span class="line"><span class="built_in">connect</span>(pushButton[<span class="number">1</span>], <span class="built_in">SIGNAL</span>(<span class="built_in">clicked</span>()),</span><br><span class="line"><span class="keyword">this</span>, <span class="built_in">SLOT</span>(<span class="built_in">clearHostInfo</span>()));</span><br><span class="line"><span class="built_in">connect</span>(timer, <span class="built_in">SIGNAL</span>(<span class="built_in">timeout</span>()),</span><br><span class="line"><span class="keyword">this</span>, <span class="built_in">SLOT</span>(<span class="built_in">timerTimeOut</span>()));</span><br><span class="line">&#125;</span><br><span class="line">MainWindow::~<span class="built_in">MainWindow</span>()</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::timerStart</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 清空文本 */</span></span><br><span class="line">textBrowser-&gt;<span class="built_in">clear</span>();</span><br><span class="line"><span class="comment">/* 定时 1s */</span></span><br><span class="line">timer-&gt;<span class="built_in">start</span>(<span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::timerTimeOut</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 显示本机信息 */</span></span><br><span class="line"><span class="built_in">showHostInfo</span>();</span><br><span class="line"><span class="comment">/* 停止定时器 */</span></span><br><span class="line">timer-&gt;<span class="built_in">stop</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">QString <span class="title">MainWindow::getHostInfo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 通过 QHostInfo 的 localHostName 函数获取主机名称 */</span></span><br><span class="line">QString str = <span class="string">&quot;主机名称：&quot;</span> + QHostInfo::<span class="built_in">localHostName</span>() + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line"><span class="comment">/* 获取所有的网络接口，</span></span><br><span class="line"><span class="comment">* QNetworkInterface 类提供主机的 IP 地址和网络接口的列表 */</span></span><br><span class="line">QList&lt;QNetworkInterface&gt; list = QNetworkInterface::<span class="built_in">allInterfaces</span>();</span><br><span class="line"><span class="comment">/* 遍历 list */</span></span><br><span class="line">foreach (QNetworkInterface interface, list) &#123;</span><br><span class="line">str+= <span class="string">&quot;网卡设备:&quot;</span> + interface.<span class="built_in">name</span>() + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">str+= <span class="string">&quot;MAC 地址:&quot;</span> + interface.<span class="built_in">hardwareAddress</span>() + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line"><span class="comment">/* QNetworkAddressEntry 类存储 IP 地址子网掩码和广播地址 */</span></span><br><span class="line">QList&lt;QNetworkAddressEntry&gt; entryList = interface.<span class="built_in">addressEntries</span>();</span><br><span class="line"><span class="comment">/* 遍历 entryList */</span></span><br><span class="line">foreach (QNetworkAddressEntry entry, entryList) &#123;</span><br><span class="line"><span class="comment">/* 过滤 IPv6 地址，只留下 IPv4 */</span></span><br><span class="line"><span class="keyword">if</span> (entry.<span class="built_in">ip</span>().<span class="built_in">protocol</span>() == QAbstractSocket::IPv4Protocol) &#123;</span><br><span class="line">str+= <span class="string">&quot;IP 地址:&quot;</span> + entry.<span class="built_in">ip</span>().<span class="built_in">toString</span>() + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">str+= <span class="string">&quot;子网掩码:&quot;</span> + entry.<span class="built_in">netmask</span>().<span class="built_in">toString</span>() + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line">str+= <span class="string">&quot;广播地址:&quot;</span> + entry.<span class="built_in">broadcast</span>().<span class="built_in">toString</span>() + <span class="string">&quot;\n\n&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 返回网络信息 */</span></span><br><span class="line"><span class="keyword">return</span> str;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::showHostInfo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 获取本机信息后显示到 textBrowser */</span></span><br><span class="line">textBrowser-&gt;<span class="built_in">insertPlainText</span>(<span class="built_in">getHostInfo</span>());</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::clearHostInfo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* 判断 textBrowser 是否为空，如果不为空则清空文本 */</span></span><br><span class="line"><span class="keyword">if</span> (!textBrowser-&gt;<span class="built_in">toPlainText</span>().<span class="built_in">isEmpty</span>())</span><br><span class="line"><span class="comment">/* 清空文本 */</span></span><br><span class="line">textBrowser-&gt;<span class="built_in">clear</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">第 90~123 行，是本例最重要的代码。</span><br><span class="line">第 93 行，通过 QHostInfo 的 localHostName 函数获取主机名称。</span><br><span class="line">第 97~98 行，通过 QNetworkInterface::allInterfaces()获取网络接口列表 list 类存储 IP 地址子网掩码和广播地址。如果我们用 qDebug()函数打印出 list，可以发现获取了所有的网络信息。而我们要提取网络里面的网络信息使用 QNetworkAddressEntry。</span><br><span class="line">第 106~107 行，使用 QNetworkAddressEntry 从 interface 接口里使用函数addressEntries()，获取所有的条目。就可以使用 QNetworkAddressEntry 的对象 entry 获取 IP地址子网掩码和广播地址。</span><br><span class="line">第 110~118 行，因为获取的 entries 在一个 QNetworkInterface 下可能有两个 IP，分别是 ipv4和 ipv6。这里使用 ip().protocol()来判断协议的类型，只留下 ipv4 类型的信息。筛选信息在我们写程序常常需要的。</span><br></pre></td></tr></table></figure>
+
+<h2 id="套接字"><a href="#套接字" class="headerlink" title="套接字"></a>套接字</h2><p>socket编程</p>
+<h3 id="socket概述"><a href="#socket概述" class="headerlink" title="socket概述"></a>socket概述</h3><ul>
+<li>接字，用于描述IP地址和端口号</li>
+<li>socket时链接运行在网络上的两个程序间的双向通信的端点。</li>
+<li>通讯两端都有socket，数据在两个socket之间通过IO进行传输。</li>
+</ul>
+<p>套接字是一种特殊的I&#x2F;O接口，在代码内体现为特殊的文件描述符，socket是一种常见的进程间通信。</p>
+<p>套接字主要有三种类型：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1、流式套接字（SOCK_STREAM）</span><br><span class="line">流式套接字提供可靠的，面向连接的通信流，保证数据传输的可靠性和有序性。TCP通信使用该</span><br><span class="line">套接字。</span><br><span class="line">2、数据报套接字（SOCK_DGRAM）</span><br><span class="line">提供不可靠、无连接的通信流，不保证可靠传输、无序。UDP通信使用该套接字。</span><br><span class="line">3、原始套接字（SOCK_RAW）</span><br><span class="line">允许对底层协议进行访问，功能强大但不方便。</span><br></pre></td></tr></table></figure>
+
+<p>TCP连接的建立：三次握手</p>
+<p>TCP连接的释放：四次挥手</p>
+<h3 id="socket通信"><a href="#socket通信" class="headerlink" title="socket通信"></a>socket通信</h3><ul>
+<li>服务器端将一个套接字绑定到一个特定的端口，并通过这个套接字等待和监听客户的连接请求。</li>
+<li>客户端根据服务器所在的主机和端口号发送连接请求。</li>
+<li>如果一切正常，服务器接受连接请求，并且获得一个新的绑定到不同端口地址的套接字。</li>
+<li>服务器端和客户端通过读写套接字进行通讯。</li>
+</ul>
+<p><strong>流程图</strong></p>
+<img src="https://pic.imgdb.cn/item/65587ad4c458853aef3f0366.png" class="lazyload" data-srcset="https://pic.imgdb.cn/item/65587ad4c458853aef3f0366.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20231108143151865.png">
+
+<h3 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h3><p>如果需要使用TCP协议创建一个服务器，需要以下步骤：</p>
+<ul>
+<li>创建套接字</li>
+<li>绑定套接字</li>
+<li>设置监听模式</li>
+<li>接受客户端的连接请求</li>
+<li>接受&#x2F;发送数据</li>
+<li>断开连接</li>
+</ul>
+<p>创建套接字</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">socket()函数的用法：</span><br><span class="line">头文件</span><br><span class="line">#include &lt;sys/types.h&gt;</span><br><span class="line">#include &lt;sys/socket.h&gt;</span><br><span class="line">函数原型</span><br><span class="line">int socket(int domain, int type, int protocol);</span><br><span class="line">函数参数</span><br><span class="line">domain：选择通信协议，常见的协议：</span><br><span class="line">AF_INET：IPv4通信协议</span><br><span class="line">AF_INET6：IPv6通信协议</span><br><span class="line">AF_UNIX：本地通信</span><br><span class="line">type：套接字类型</span><br><span class="line">protocol：协议值，通常情况为0</span><br><span class="line">函数返回值</span><br><span class="line">成功：非负套接字文件描述符</span><br><span class="line">失败：-1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+  </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-11-18T16:50:46+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年11月18日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：3.2k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：13 分钟</p>
+    </a>
+  </div>
+
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Qt/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Qt</p></a></div>
+  <span hidden itemprop="keywords">Qt</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://misakivv.github.io/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay10/&title=嵌入式Day10 - my blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://misakivv.github.io/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay10/&title=嵌入式Day10 - my blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://misakivv.github.io/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay10/&title=嵌入式Day10 - my blog&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay9/'>
+          <p class='title'>嵌入式Day9<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>QT文件操作QFile读写文本提供读取写入文件的接口
+文件名通常在构造函数中传递
+123456QIDDevice::Readonly:以只读的方式打开文件，用于载入文件QIDDevice::Wr...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay10/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2610,7 +2918,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-      
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%A7%E6%89%BFQObject%E7%9A%84%E7%BA%BF%E7%A8%8B"><span class="toc-text">继承QObject的线程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B"><span class="toc-text">网络编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%9C%AC%E6%9C%BA%E7%9A%84%E7%BD%91%E7%BB%9C%E4%BF%A1%E6%81%AF"><span class="toc-text">获取本机的网络信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A5%97%E6%8E%A5%E5%AD%97"><span class="toc-text">套接字</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#socket%E6%A6%82%E8%BF%B0"><span class="toc-text">socket概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#socket%E9%80%9A%E4%BF%A1"><span class="toc-text">socket通信</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF"><span class="toc-text">服务器端</span></a></li></ol></li></ol>
   </div>
 </section>
 
@@ -2622,6 +2930,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3697,7 +4006,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://misakivv.github.io/","name":"my blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"my blog","url":"https://misakivv.github.io/","keywords":null,"description":"blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","description":"blog"},"publisher":{"@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://misakivv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"所有标签","description":"blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://misakivv.github.io/tags/index.html"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/"},"publisher":{"@type":"Organization","name":"my blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://misakivv.github.io/tags/index.html","wordCount":0,"datePublished":"2023-11-14T14:44:37.336Z","dateModified":"2023-11-14T14:44:37.336Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","sameAs":["https://github.com/volantis-x"],"description":"blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://misakivv.github.io/","name":"my blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://misakivv.github.io/categories/嵌入式实训/","name":"嵌入式实训"}},{"@type":"ListItem","position":3,"item":{"@id":"https://misakivv.github.io/2023/11/18/嵌入式Day10/","name":"嵌入式Day10"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"my blog","url":"https://misakivv.github.io/","keywords":null,"description":"blog","author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/","description":"blog"},"publisher":{"@type":"Organization","name":"my blog","url":"https://misakivv.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://misakivv.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"嵌入式Day10","description":"blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://misakivv.github.io/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay10/"},"author":{"@type":"Person","name":"John Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://misakivv.github.io/"},"publisher":{"@type":"Organization","name":"my blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://misakivv.github.io/2023/11/18/%E5%B5%8C%E5%85%A5%E5%BC%8FDay10/","wordCount":0,"datePublished":"2023-11-18T08:46:58.000Z","dateModified":"2023-11-18T08:50:46.574Z","articleSection":"嵌入式实训","keywords":"Qt","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
